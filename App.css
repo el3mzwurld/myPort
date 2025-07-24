@@ -86,7 +86,6 @@ header {
       background: black;
       cursor: pointer;
       margin: 5px;
-
       display: none;
       .light {
         /* opacity: 0;
@@ -140,7 +139,7 @@ header {
         text-align: center;
         width: 100%;
         height: 100%;
-        font-size: 20px;
+        font-size: 16px;
         font-weight: 600;
         color: var(--txt-alt);
         cursor: pointer;
@@ -149,7 +148,7 @@ header {
 
         &:hover {
           color: gray;
-          font-size: 22px;
+          font-size: 18px;
         }
       }
     }
@@ -232,7 +231,7 @@ main {
     .niche {
       z-index: 1;
       font-family: var(--space-grotesk);
-      font-size: 60px;
+      font-size: 30px;
       font-weight: 700;
       width: 60%;
       height: auto;
@@ -248,7 +247,7 @@ main {
       }
       p {
         span {
-          font-size: 130px;
+          font-size: 100px;
           word-spacing: 30px;
           transition: 0.65s ease;
           &:hover {
@@ -257,7 +256,7 @@ main {
         }
       }
       span {
-        font-size: 100px;
+        font-size: 65px;
         transition: 0.65s ease;
         &:hover {
           color: white;
@@ -302,7 +301,7 @@ main {
       .bio {
         padding: 20px 20px;
         padding-bottom: 0px;
-        font-size: 25px;
+        font-size: 18px;
         position: absolute;
         width: 50%;
         height: 100%;
@@ -312,7 +311,7 @@ main {
         flex-direction: column;
         align-items: flex-start;
         justify-content: flex-start;
-        gap: 20px;
+        gap: 10px;
 
         p {
           line-height: 50px;
@@ -366,12 +365,15 @@ main {
       font-family: var(--font2);
       height: auto;
       position: relative;
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
       .banner {
         font-size: 40px;
         font-weight: 700;
       }
       .txt {
-        font-size: 20px;
+        font-size: 16px;
         text-align: justify;
         width: 30%;
       }
@@ -499,7 +501,7 @@ main {
 
   .skills {
     width: 100%;
-    height: 600px;
+    height: 650px;
     padding: 0px 20px;
     display: flex;
     flex-direction: column;
@@ -513,14 +515,14 @@ main {
     }
     .skills-grid {
       width: 100%;
-      height: 398.3px;
+      height: 350px;
       display: grid;
       cursor: pointer;
       grid-template-columns: 1fr 1fr;
       grid-template-rows: 1fr 1fr;
       gap: 10px;
       padding: 0px 150px;
-
+      /* background-color: black; */
       .frame {
         display: flex;
         flex-direction: column;
@@ -531,7 +533,7 @@ main {
         }
         .text {
           flex: 1;
-          font-size: 20px;
+          font-size: 16px;
           text-align: justify;
           letter-spacing: 0px;
           width: 80%;
@@ -550,13 +552,15 @@ main {
     .tech-stack {
       width: 20%;
       max-width: 100%;
-      flex: 1;
+      height: 100px;
       position: relative;
       overflow: hidden;
       left: 50%;
+      /* margin-top: 30px; */
       transform: translateX(-50%);
       border-radius: 30px;
       background: black;
+      bottom: 0%;
       .tray {
         position: absolute;
         white-space: nowrap;
@@ -615,7 +619,7 @@ main {
         height: auto;
         line-height: 1.5;
         text-align: justify;
-        font-size: 18px;
+        font-size: 16px;
         font-weight: 500;
         color: gray;
       }
@@ -631,6 +635,7 @@ main {
       display: flex;
       align-items: flex-start;
       flex-direction: column;
+      gap: 20px;
       .title {
         width: 100%;
         height: auto;
@@ -646,7 +651,7 @@ main {
         height: auto;
         line-height: 1.5;
         text-align: justify;
-        font-size: 18px;
+        font-size: 16px;
         font-weight: 500;
         color: gray;
       }
@@ -657,18 +662,20 @@ main {
     width: 100%;
     margin-top: 50px;
     padding: 0px 30px;
-    height: 35dvh;
+    height: 100dvh;
     position: relative;
     animation: view 5s ease linear;
     animation-timeline: view();
     animation-range: entry 0%;
+    display: flex;
+
     .Bbtn {
       width: 100%;
       height: 100%;
       display: flex;
       flex-direction: column;
       align-items: center;
-
+      justify-content: center;
       .txt {
         font-size: 65px;
         font-weight: 700;
