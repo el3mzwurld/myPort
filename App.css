@@ -979,6 +979,138 @@ main {
 }
 
 @media (min-width: 401px) and (max-width: 480px) {
+  body {
+    width: 100%;
+    height: 100vh;
+    padding: 0px;
+    margin: 0px;
+  }
+  header {
+    display: none;
+  }
+
+  main {
+    width: 100%;
+    padding: 0px;
+    margin: 0px;
+    height: auto;
+    .intro {
+      /* display: none; */
+      height: 100dvh;
+      position: relative;
+
+      &:hover {
+        .container {
+          .hover {
+            animation: none;
+            opacity: 0.65;
+          }
+        }
+        .container:before {
+          background: rgba(18, 18, 18, 0.5);
+          backdrop-filter: blur(0px);
+        }
+      }
+      .container {
+        width: 100%;
+
+        .hover {
+          text-align: center;
+          opacity: 0.8;
+          p:nth-child(1) {
+            display: none;
+          }
+          p:nth-child(2) {
+          }
+        }
+      }
+      .container:before {
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background: rgba(18, 18, 18, 0.5);
+        backdrop-filter: blur(0px);
+      }
+      .name {
+        width: 100%;
+        height: auto;
+        text-align: center;
+        font-size: 40px;
+        color: wheat;
+        font-family: var(--space-grotesk);
+        position: absolute;
+        left: 50%;
+        top: 10%;
+        transform: translate(-50%, -10%);
+        font-weight: 500;
+      }
+      .niche {
+        position: absolute;
+        left: 40%;
+        top: 30%;
+        transform: translate(-40%, -30%);
+
+        p {
+          span {
+            font-size: 35px;
+          }
+        }
+        span {
+          font-size: 35px;
+        }
+      }
+
+      .intro-txt {
+        /* display: none; */
+        opacity: 1;
+        visibility: visible;
+        position: absolute;
+        bottom: 30%;
+        left: 40%;
+        transform: translate(-40%, 30%);
+        .email {
+          display: none;
+        }
+
+        .bio {
+          p {
+            display: none;
+          }
+
+          .socials {
+            width: 100%;
+            display: none;
+            span {
+              &:hover {
+                background: none;
+                color: white;
+                transform: translate(0%, 0%);
+              }
+
+              ion-icon {
+                font-size: 30px;
+              }
+            }
+          }
+        }
+      }
+    }
+    .projects {
+      display: none;
+    }
+    .skills {
+      display: none;
+    }
+    .goals-and-journey {
+      display: none;
+    }
+    .CaCV {
+      display: none;
+    }
+  }
 }
 
 @keyframes links-show {
