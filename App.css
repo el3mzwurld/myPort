@@ -526,7 +526,6 @@ main {
           transition: 0.65s ease-in-out;
           line-height: 1.5;
           color: gray;
-          word-spacing: px;
         }
 
         &:hover {
@@ -1094,19 +1093,115 @@ main {
             /* display: none; */
             width: 100%;
             padding-right: 10px;
-            line-height: 30px;
+            line-height: 1.8;
+
+            &:hover {
+              color: gray;
+            }
           }
         }
       }
       .tech-stack {
-        display: none;
+        /* display: none; */
+        margin: 20px 0px;
+        width: 80%;
       }
     }
     .goals-and-journey {
-      display: none;
+      width: 100%;
+      display: flex;
+      padding: 10px 0px;
+      flex-direction: column;
+      height: auto;
+      margin: 0px;
+      gap: 20px;
+      .Journey {
+        position: static;
+        width: 100%;
+        height: auto;
+        .title {
+          width: 100%;
+        }
+      }
+      .goals {
+        position: static;
+        width: 100%;
+        height: auto;
+        .title {
+          width: 100%;
+        }
+      }
     }
     .CaCV {
-      display: none;
+      width: 100%;
+      display: flex;
+      align-items: center;
+
+      .Bbtn {
+        width: 100%;
+        margin-top: 20px;
+
+        .txt {
+          width: 100%;
+          text-align: center;
+          font-size: 50px;
+        }
+        .btns {
+          display: flex;
+          flex-direction: row;
+          flex-wrap: wrap;
+          .Btlg {
+            button {
+              background-color: black;
+
+              &:hover {
+                background-color: black;
+
+                img {
+                  width: 50%;
+                  height: 50%;
+                }
+              }
+            }
+          }
+
+          .WhAp {
+            button {
+              background-color: black;
+
+              ion-icon {
+                color: greenyellow;
+              }
+
+              &:hover {
+                background-color: black;
+
+                ion-icon {
+                  color: greenyellow;
+                }
+              }
+            }
+          }
+
+          .Bml {
+            button {
+              background-color: black;
+
+              ion-icon {
+                color: white;
+              }
+
+              &:hover {
+                background-color: black;
+
+                ion-icon {
+                  color: white;
+                }
+              }
+            }
+          }
+        }
+      }
     }
   }
 }
@@ -1322,13 +1417,152 @@ main {
       }
     }
     .skills {
-      display: none;
+      /* display: none; */
+      width: 100%;
+      height: auto;
+      display: flex;
+      flex-direction: column;
+      gap: 35px;
+      overflow: hidden;
+
+      .title {
+        font-size: 35px;
+        font-weight: 700;
+      }
+      .skills-grid {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        height: auto;
+        padding: 0px;
+        margin: 0px;
+        gap: 5px;
+        .frame {
+          /* display: none; */
+          display: flex;
+          flex-direction: column;
+          gap: 10px;
+          width: 100%;
+          height: 240px;
+          gap: 15px;
+
+          .title {
+            /* display: none; */
+          }
+          .text {
+            /* display: none; */
+            width: 100%;
+            padding-right: 10px;
+            line-height: 1.8;
+
+            &:hover {
+              color: gray;
+            }
+          }
+        }
+      }
+      .tech-stack {
+        /* display: none; */
+        margin: 20px 0px;
+        width: 80%;
+      }
     }
     .goals-and-journey {
-      display: none;
+      width: 100%;
+      display: flex;
+      padding: 10px 0px;
+      flex-direction: column;
+      height: auto;
+      margin: 0px;
+      gap: 20px;
+      .Journey {
+        position: static;
+        width: 100%;
+        height: auto;
+        .title {
+          width: 100%;
+        }
+      }
+      .goals {
+        position: static;
+        width: 100%;
+        height: auto;
+        .title {
+          width: 100%;
+        }
+      }
     }
     .CaCV {
-      display: none;
+      width: 100%;
+      display: flex;
+      align-items: center;
+
+      .Bbtn {
+        width: 100%;
+        margin-top: 20px;
+
+        .txt {
+          width: 100%;
+          text-align: center;
+          font-size: 50px;
+        }
+        .btns {
+          display: flex;
+          flex-direction: row;
+          flex-wrap: wrap;
+          .Btlg {
+            button {
+              background-color: black;
+
+              &:hover {
+                background-color: black;
+
+                img {
+                  width: 50%;
+                  height: 50%;
+                }
+              }
+            }
+          }
+
+          .WhAp {
+            button {
+              background-color: black;
+
+              ion-icon {
+                color: greenyellow;
+              }
+
+              &:hover {
+                background-color: black;
+
+                ion-icon {
+                  color: greenyellow;
+                }
+              }
+            }
+          }
+
+          .Bml {
+            button {
+              background-color: black;
+
+              ion-icon {
+                color: white;
+              }
+
+              &:hover {
+                background-color: black;
+
+                ion-icon {
+                  color: white;
+                }
+              }
+            }
+          }
+        }
+      }
     }
   }
 }
