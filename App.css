@@ -173,6 +173,10 @@ main {
         visibility: visible;
       }
     }
+
+    .name {
+      display: none;
+    }
     .container {
       width: 100%;
       height: 100%;
@@ -197,6 +201,9 @@ main {
         transition: 0.8s ease-in-out;
         opacity: 0.65;
         animation: show 1.5s ease;
+        p:nth-child(2) {
+          display: none;
+        }
       }
     }
     .container:before {
@@ -264,7 +271,7 @@ main {
       .email {
         padding: 30px;
         color: white;
-        font-size: 20px;
+        font-size: 16px;
 
         a {
           color: white;
@@ -695,14 +702,14 @@ main {
             justify-content: center;
             align-items: center;
             border-radius: 100px;
-            transition: 0.65s ease-in-out;
+            transition: 0.4s ease-in-out;
 
             img {
               width: 50%;
               height: 50%;
               object-fit: cover;
               object-position: center;
-              transition: 0.65s ease-in-out;
+              transition: 0.4s ease-in-out;
             }
 
             &:hover {
@@ -727,7 +734,7 @@ main {
             justify-content: center;
             align-items: center;
             border-radius: 100px;
-            transition: 0.65s ease-in-out;
+            transition: 0.4s ease-in-out;
 
             span {
               width: 100%;
@@ -739,7 +746,7 @@ main {
               ion-icon {
                 width: 50%;
                 height: 50%;
-                transition: 0.65s ease-in-out;
+                transition: 0.4s ease-in-out;
               }
             }
 
@@ -765,7 +772,7 @@ main {
             justify-content: center;
             align-items: center;
             border-radius: 100px;
-            transition: 0.65s ease-in-out;
+            transition: 0.4s ease-in-out;
 
             span {
               width: 100%;
@@ -777,7 +784,7 @@ main {
               ion-icon {
                 width: 50%;
                 height: 50%;
-                transition: 0.65s ease-in-out;
+                transition: 0.4s ease-in-out;
               }
             }
 
