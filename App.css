@@ -884,6 +884,7 @@ main {
         .hover {
           text-align: center;
           opacity: 0.8;
+          right: 3.5%;
           p:nth-child(1) {
             display: none;
           }
@@ -1018,7 +1019,7 @@ main {
           gap: 25px;
           .frame {
             width: 100%;
-            height: 300px;
+            height: 250px;
 
             .txt {
               opacity: 1;
@@ -1093,7 +1094,7 @@ main {
             /* display: none; */
             width: 100%;
             padding-right: 10px;
-            line-height: 1.8;
+            line-height: 1.5;
 
             &:hover {
               color: gray;
@@ -1329,7 +1330,7 @@ main {
     .projects {
       /* display: none; */
       width: 100%;
-      height: 100dvh;
+      height: auto;
       display: flex;
       flex-direction: column;
       gap: 35px;
@@ -1566,6 +1567,756 @@ main {
     }
   }
 }
+@media (min-width: 481px) and (max-width: 550px) {
+  body {
+    width: 100%;
+    height: 100dvh;
+    padding: 0px;
+    margin: 0px;
+  }
+  header {
+    display: none;
+  }
+
+  main {
+    width: 100%;
+    padding: 0px;
+    margin: 0px;
+    .intro {
+      /* display: none; */
+      height: 70dvh;
+      position: relative;
+
+      &:hover {
+        .container {
+          .hover {
+            animation: forever 2s ease infinite;
+            opacity: 0.65;
+          }
+        }
+        /* .niche {
+          animation: mob-noshow 0.5s ease forwards;
+        } */
+        .container:before {
+          background: rgba(18, 18, 18, 0.5);
+          backdrop-filter: blur(0px);
+        }
+      }
+      .container {
+        width: 100%;
+
+        .hover {
+          text-align: center;
+          opacity: 0.5;
+          right: 3.5%;
+          animation: forever 2s ease infinite;
+
+          p:nth-child(1) {
+            display: none;
+          }
+          p:nth-child(2) {
+          }
+        }
+      }
+      .container:before {
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background: rgba(18, 18, 18, 0.5);
+        backdrop-filter: blur(0px);
+      }
+      .name {
+        width: 100%;
+        height: auto;
+        text-align: center;
+        font-size: 20px;
+        color: wheat;
+        font-family: var(--space-grotesk);
+        position: absolute;
+        left: 50%;
+        top: 10%;
+        transform: translate(-50%, -10%);
+        font-weight: 500;
+      }
+      .niche {
+        position: absolute;
+        left: 50%;
+        top: 30%;
+        transform: translate(-50%, -30%);
+        padding: 0;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+
+        p {
+          span {
+            font-size: 35px;
+          }
+        }
+        span {
+          font-size: 35px;
+        }
+      }
+
+      .intro-txt {
+        /* display: none; */
+        opacity: 1;
+        visibility: visible;
+        position: absolute;
+        bottom: 30%;
+        left: 40%;
+        transform: translate(-40%, 30%);
+        .email {
+          display: none;
+        }
+
+        .bio {
+          p {
+            display: none;
+          }
+
+          .socials {
+            width: 100%;
+            display: none;
+            span {
+              &:hover {
+                background: none;
+                color: white;
+                transform: translate(0%, 0%);
+              }
+
+              ion-icon {
+                font-size: 30px;
+              }
+            }
+          }
+        }
+      }
+    }
+    .projects {
+      /* display: none; */
+      width: 100%;
+      height: auto;
+      display: flex;
+      flex-direction: column;
+      gap: 35px;
+      align-items: flex-start;
+
+      .title {
+        width: 100%;
+        height: auto;
+
+        .banner {
+          font-size: 35px;
+          font-weight: 700;
+        }
+        .txt {
+          height: auto;
+          width: 50%;
+          font-size: 14px;
+          text-align: justify;
+        }
+        .more {
+          bottom: 7%;
+          right: 10%;
+          transform: translateY(50%);
+          font-size: 16px;
+
+          &:hover {
+            color: black;
+
+            span {
+              img {
+                opacity: 1;
+              }
+            }
+          }
+        }
+      }
+      .project-grid {
+        /* display: none; */
+        display: flex;
+        flex-direction: column;
+
+        .frames {
+          display: flex;
+          flex-direction: column;
+          justify-content: center;
+          align-items: center;
+          gap: 25px;
+          width: 60%;
+
+          .frame {
+            width: 100%;
+            height: 300px;
+
+            .txt {
+              opacity: 1;
+              visibility: visible;
+              padding: 10px;
+              font-size: 16px;
+
+              span {
+                font-size: 14px;
+              }
+            }
+
+            &:hover {
+              transform: translateY(0px);
+              transition: 0s ease-in-out;
+
+              .preview {
+                img {
+                  box-shadow: none;
+                }
+                span {
+                  opacity: 1;
+                  visibility: visible;
+                  box-shadow: 0px 20px 40px -5px rgba(18, 18, 18, 0.4);
+                  transition: 1.2s ease;
+                }
+
+                .txt {
+                  animation: none;
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+    .skills {
+      /* display: none; */
+      width: 100%;
+      height: auto;
+      display: flex;
+      flex-direction: column;
+      gap: 35px;
+      overflow: hidden;
+      align-items: center;
+
+      .title {
+        font-size: 35px;
+        font-weight: 700;
+        width: 100%;
+      }
+      .skills-grid {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        height: auto;
+        padding: 0px;
+        margin: 0px;
+        gap: 5px;
+        width: 100%;
+        .frame {
+          /* display: none; */
+          display: flex;
+          flex-direction: column;
+          gap: 10px;
+          width: 80%;
+          height: 240px;
+          gap: 15px;
+
+          .title {
+            /* display: none; */
+          }
+          .text {
+            /* display: none; */
+            width: 100%;
+            padding-right: 10px;
+            line-height: 1.5;
+
+            &:hover {
+              color: gray;
+            }
+          }
+        }
+      }
+      .tech-stack {
+        display: none;
+        margin: 20px 0px;
+        width: 80%;
+      }
+    }
+    .goals-and-journey {
+      width: 100%;
+      display: flex;
+      padding: 10px 0px;
+      flex-direction: column;
+      height: auto;
+      margin: 0px;
+      gap: 20px;
+      .Journey {
+        position: static;
+        width: 100%;
+        height: auto;
+        .title {
+          width: 100%;
+        }
+      }
+      .goals {
+        position: static;
+        width: 100%;
+        height: auto;
+        .title {
+          width: 100%;
+        }
+      }
+    }
+    .CaCV {
+      width: 100%;
+      display: flex;
+      align-items: center;
+
+      .Bbtn {
+        width: 100%;
+        margin-top: 20px;
+
+        .txt {
+          width: 100%;
+          text-align: center;
+          font-size: 50px;
+        }
+        .btns {
+          display: flex;
+          flex-direction: row;
+          flex-wrap: wrap;
+          .Btlg {
+            button {
+              background-color: black;
+
+              &:hover {
+                background-color: black;
+
+                img {
+                  width: 50%;
+                  height: 50%;
+                }
+              }
+            }
+          }
+
+          .WhAp {
+            button {
+              background-color: black;
+
+              ion-icon {
+                color: greenyellow;
+              }
+
+              &:hover {
+                background-color: black;
+
+                ion-icon {
+                  color: greenyellow;
+                }
+              }
+            }
+          }
+
+          .Bml {
+            button {
+              background-color: black;
+
+              ion-icon {
+                color: white;
+              }
+
+              &:hover {
+                background-color: black;
+
+                ion-icon {
+                  color: white;
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
+@media (min-width: 551px) and (max-width: 820px) {
+  body {
+    width: 100%;
+    height: 100dvh;
+    padding: 0px;
+    margin: 0px;
+  }
+  header {
+    display: none;
+  }
+
+  main {
+    width: 100%;
+    padding: 0px;
+    margin: 0px;
+    .intro {
+      /* display: none; */
+      height: 70dvh;
+      position: relative;
+
+      &:hover {
+        .container {
+          .hover {
+            animation: forever 2s ease infinite;
+            opacity: 0.65;
+          }
+        }
+        /* .niche {
+          animation: mob-noshow 0.5s ease forwards;
+        } */
+        .container:before {
+          background: rgba(18, 18, 18, 0.5);
+          backdrop-filter: blur(0px);
+        }
+      }
+      .container {
+        width: 100%;
+
+        .hover {
+          text-align: center;
+          opacity: 0.5;
+          right: 3.5%;
+          animation: forever 2s ease infinite;
+
+          p:nth-child(1) {
+            display: none;
+          }
+          p:nth-child(2) {
+          }
+        }
+      }
+      .container:before {
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background: rgba(18, 18, 18, 0.5);
+        backdrop-filter: blur(0px);
+      }
+      .name {
+        width: 100%;
+        height: auto;
+        text-align: center;
+        font-size: 20px;
+        color: wheat;
+        font-family: var(--space-grotesk);
+        position: absolute;
+        left: 50%;
+        top: 10%;
+        transform: translate(-50%, -10%);
+        font-weight: 500;
+      }
+      .niche {
+        position: absolute;
+        left: 50%;
+        top: 30%;
+        transform: translate(-50%, -30%);
+        padding: 0;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+
+        p {
+          span {
+            font-size: 35px;
+          }
+        }
+        span {
+          font-size: 35px;
+        }
+      }
+
+      .intro-txt {
+        /* display: none; */
+        opacity: 1;
+        visibility: visible;
+        position: absolute;
+        bottom: 30%;
+        left: 40%;
+        transform: translate(-40%, 30%);
+        .email {
+          display: none;
+        }
+
+        .bio {
+          p {
+            display: none;
+          }
+
+          .socials {
+            width: 100%;
+            display: none;
+            span {
+              &:hover {
+                background: none;
+                color: white;
+                transform: translate(0%, 0%);
+              }
+
+              ion-icon {
+                font-size: 30px;
+              }
+            }
+          }
+        }
+      }
+    }
+    .projects {
+      /* display: none; */
+      width: 100%;
+      height: auto;
+      display: flex;
+      flex-direction: column;
+      gap: 35px;
+      align-items: flex-start;
+
+      .title {
+        width: 100%;
+        height: auto;
+
+        .banner {
+          font-size: 35px;
+          font-weight: 700;
+        }
+        .txt {
+          height: auto;
+          width: 50%;
+          font-size: 14px;
+          text-align: justify;
+        }
+        .more {
+          bottom: 7%;
+          right: 10%;
+          transform: translateY(50%);
+          font-size: 16px;
+
+          &:hover {
+            color: black;
+
+            span {
+              img {
+                opacity: 1;
+              }
+            }
+          }
+        }
+      }
+      .project-grid {
+        /* display: none; */
+        display: flex;
+        flex-direction: column;
+
+        .frames {
+          display: flex;
+          flex-direction: column;
+          justify-content: center;
+          align-items: center;
+          gap: 25px;
+          width: 60%;
+
+          .frame {
+            width: 100%;
+            height: 300px;
+
+            .txt {
+              opacity: 1;
+              visibility: visible;
+              padding: 10px;
+              font-size: 16px;
+
+              span {
+                font-size: 14px;
+              }
+            }
+
+            &:hover {
+              transform: translateY(0px);
+              transition: 0s ease-in-out;
+
+              .preview {
+                img {
+                  box-shadow: none;
+                }
+                span {
+                  opacity: 1;
+                  visibility: visible;
+                  box-shadow: 0px 20px 40px -5px rgba(18, 18, 18, 0.4);
+                  transition: 1.2s ease;
+                }
+
+                .txt {
+                  animation: none;
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+    .skills {
+      /* display: none; */
+      width: 100%;
+      height: auto;
+      display: flex;
+      flex-direction: column;
+      gap: 35px;
+      overflow: hidden;
+      align-items: center;
+
+      .title {
+        font-size: 35px;
+        font-weight: 700;
+        width: 100%;
+      }
+      .skills-grid {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        height: auto;
+        padding: 0px;
+        margin: 0px;
+        gap: 5px;
+        width: 100%;
+        .frame {
+          /* display: none; */
+          display: flex;
+          flex-direction: column;
+          gap: 10px;
+          width: 80%;
+          height: 240px;
+          gap: 15px;
+
+          .title {
+            /* display: none; */
+          }
+          .text {
+            /* display: none; */
+            width: 100%;
+            padding-right: 10px;
+            line-height: 1.5;
+
+            &:hover {
+              color: gray;
+            }
+          }
+        }
+      }
+      .tech-stack {
+        display: none;
+        margin: 20px 0px;
+        width: 80%;
+      }
+    }
+    .goals-and-journey {
+      width: 100%;
+      display: flex;
+      padding: 10px 0px;
+      flex-direction: column;
+      height: auto;
+      margin: 0px;
+      gap: 20px;
+      .Journey {
+        position: static;
+        width: 100%;
+        height: auto;
+        .title {
+          width: 100%;
+        }
+      }
+      .goals {
+        position: static;
+        width: 100%;
+        height: auto;
+        .title {
+          width: 100%;
+        }
+      }
+    }
+    .CaCV {
+      width: 100%;
+      display: flex;
+      align-items: center;
+
+      .Bbtn {
+        width: 100%;
+        margin-top: 20px;
+
+        .txt {
+          width: 100%;
+          text-align: center;
+          font-size: 50px;
+        }
+        .btns {
+          display: flex;
+          flex-direction: row;
+          flex-wrap: wrap;
+          .Btlg {
+            button {
+              background-color: black;
+
+              &:hover {
+                background-color: black;
+
+                img {
+                  width: 50%;
+                  height: 50%;
+                }
+              }
+            }
+          }
+
+          .WhAp {
+            button {
+              background-color: black;
+
+              ion-icon {
+                color: greenyellow;
+              }
+
+              &:hover {
+                background-color: black;
+
+                ion-icon {
+                  color: greenyellow;
+                }
+              }
+            }
+          }
+
+          .Bml {
+            button {
+              background-color: black;
+
+              ion-icon {
+                color: white;
+              }
+
+              &:hover {
+                background-color: black;
+
+                ion-icon {
+                  color: white;
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
 
 @keyframes links-show {
   from {
@@ -1635,5 +2386,25 @@ main {
   }
   to {
     opacity: 1;
+  }
+}
+
+@keyframes forever {
+  from {
+    opacity: 0.5;
+  }
+  to {
+    opacity: 0.3;
+  }
+}
+
+@keyframes mob-noshow {
+  from {
+    opacity: 1;
+  }
+  to {
+    opacity: 0;
+    visibility: hidden;
+    transform: translateX(-50%);
   }
 }
