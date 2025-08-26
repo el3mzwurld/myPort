@@ -1279,17 +1279,8 @@ main {
         backdrop-filter: blur(0px);
       }
       .name {
-        width: 100%;
-        height: auto;
-        text-align: center;
-        font-size: 40px;
-        color: wheat;
-        font-family: var(--space-grotesk);
-        position: absolute;
-        left: 50%;
-        top: 10%;
-        transform: translate(-50%, -10%);
-        font-weight: 500;
+        display: block;
+        font-weight: 600;
       }
       .niche {
         position: absolute;
@@ -1644,17 +1635,8 @@ main {
         backdrop-filter: blur(0px);
       }
       .name {
-        width: 100%;
-        height: auto;
-        text-align: center;
-        font-size: 20px;
-        color: wheat;
-        font-family: var(--space-grotesk);
-        position: absolute;
-        left: 50%;
-        top: 10%;
-        transform: translate(-50%, -10%);
-        font-weight: 500;
+        display: block;
+        font-weight: 600;
       }
       .niche {
         position: absolute;
@@ -2019,17 +2001,8 @@ main {
         backdrop-filter: blur(0px);
       }
       .name {
-        width: 100%;
-        height: auto;
-        text-align: center;
-        font-size: 20px;
-        color: wheat;
-        font-family: var(--space-grotesk);
-        position: absolute;
-        left: 50%;
-        top: 10%;
-        transform: translate(-50%, -10%);
-        font-weight: 500;
+        display: block;
+        font-weight: 600;
       }
       .niche {
         position: absolute;
