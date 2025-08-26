@@ -1265,6 +1265,7 @@ main {
             display: none;
           }
           p:nth-child(2) {
+            display: block;
           }
         }
       }
@@ -1621,6 +1622,7 @@ main {
             display: none;
           }
           p:nth-child(2) {
+            display: block;
           }
         }
       }
@@ -1987,6 +1989,7 @@ main {
             display: none;
           }
           p:nth-child(2) {
+            display: block;
           }
         }
       }
