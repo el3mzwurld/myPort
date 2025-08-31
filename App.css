@@ -1375,9 +1375,10 @@ main {
         }
         .txt {
           height: auto;
-          width: 50%;
+          width: 60%;
           font-size: 14px;
           text-align: justify;
+          line-height: 1.5;
         }
         .more {
           bottom: 7%;
@@ -1737,9 +1738,10 @@ main {
         }
         .txt {
           height: auto;
-          width: 50%;
+          width: 60%;
           font-size: 14px;
           text-align: justify;
+          line-height: 1.5;
         }
         .more {
           bottom: 7%;
@@ -2104,9 +2106,10 @@ main {
         }
         .txt {
           height: auto;
-          width: 50%;
+          width: 60%;
           font-size: 14px;
           text-align: justify;
+          line-height: 1.5;
         }
         .more {
           bottom: 7%;
