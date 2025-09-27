@@ -238,7 +238,6 @@ section {
         transition: 0.45s ease-in;
         cursor: default;
         .preview {
-          background: gray;
           width: 100%;
           height: 75%;
           background-position: center;
@@ -249,6 +248,7 @@ section {
           overflow: hidden;
           img {
             width: 100%;
+            height: 100%;
             object-fit: cover;
             object-position: center;
           }
