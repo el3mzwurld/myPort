@@ -330,7 +330,16 @@ main {
         p {
           line-height: 50px;
         }
+        a {
+          color: wheat;
 
+          &:active {
+            color: wheat;
+          }
+          &:visited {
+            color: wheat;
+          }
+        }
         .socials {
           display: flex;
           flex-direction: row;
