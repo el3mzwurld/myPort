@@ -199,6 +199,7 @@ section {
       display: flex;
       align-items: center;
       justify-content: space-evenly;
+      display: none;
       div {
         /* display: none; */
         width: 25px;
@@ -297,8 +298,18 @@ section {
 
         &:hover {
           .txt {
+            .name {
+              opacity: 0;
+              visibility: hidden;
+              transition: 0.5s ease-in;
+            }
+            .stack {
+              opacity: 0;
+              visibility: hidden;
+              transition: 0.5s ease-in;
+            }
             .link {
-              animation: link 0.6s ease forwards;
+              animation: link 1s ease forwards;
             }
           }
         }
