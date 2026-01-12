@@ -46,7 +46,7 @@ export const Stack = () => {
 const MobGrid = () => {
   return (
     <>
-      <p id="title">
+      <p id="title" className="stack-ttl">
         These are a few technologies i employ to develop, maintain and
         collaborate on my work.
       </p>
