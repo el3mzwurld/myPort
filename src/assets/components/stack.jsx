@@ -46,6 +46,10 @@ export const Stack = () => {
 const MobGrid = () => {
   return (
     <>
+      <p id="title">
+        These are a few technologies i employ to develop, maintain and
+        collaborate on my work.
+      </p>
       <Caru.Root orientation="vertical" slideCount={4} className="mob-stack">
         <Caru.ItemGroup width={"100%"}>
           <Caru.Item>

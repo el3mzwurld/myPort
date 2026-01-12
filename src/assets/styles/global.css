@@ -1549,10 +1549,17 @@ body {
       height: auto;
       width: 100%;
       display: flex;
-      align-items: center;
+      align-items: flex-start;
       justify-content: center;
       padding: 30px 15px;
       font-family: var(--DMsans);
+      flex-direction: column;
+      gap: 30px;
+      #title {
+        font-size: 14px;
+        color: grey;
+        font-family: "Space Mono", sans-serif;
+      }
       .mob-stack {
         width: 100%;
         height: 350px;
@@ -1614,7 +1621,7 @@ body {
       .Bbtn {
         display: flex;
         flex-direction: column;
-        font-family: "Space Mono", sans-serif;
+        font-family: "Space-Mono", sans-serif;
         padding: 10px 5px;
         align-items: center;
         gap: 20px;
@@ -1695,7 +1702,7 @@ body {
     }
   }
 }
-@media (min-width: 320px) and (max-width: 424px) {
+@media (min-width: 375px) and (max-width: 424px) {
   .home {
     width: 100%;
     height: auto;
@@ -1907,6 +1914,13 @@ body {
       justify-content: center;
       padding: 20px 15px;
       font-family: var(--DMsans);
+      flex-direction: column;
+      gap: 30px;
+      #title {
+        font-size: 14px;
+        color: grey;
+        font-family: "Space Mono", sans-serif;
+      }
       .mob-stack {
         width: 100%;
         height: 400px;
@@ -1949,6 +1963,7 @@ body {
 
             .title {
               font-size: 16px;
+              font-family: "space mono", sans-serif;
             }
             .para {
               font-size: 12px;
