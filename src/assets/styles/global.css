@@ -271,21 +271,27 @@ body {
         }
       }
       .stack {
-        background-color: black;
-        padding: 25px 25px;
+        background-color: white;
         font-family: var(--DMsans);
         width: 100%;
-        height: auto;
+        height: 700px;
         display: flex;
         flex-direction: column;
-        align-items: center;
+        align-items: flex-start;
+        justify-content: center;
+        padding: 35px 15px;
+        gap: 20px;
 
         .stack-grid {
           width: 100%;
           height: auto;
           column-gap: 10px;
-          row-gap: 15px;
+          row-gap: 10px;
+          grid-template-columns: repeat(3, 1fr);
+          grid-template-rows: repeat(3, 200px);
+
           .box-big {
+            display: none;
             background-color: var(--gray);
             border-radius: 20px;
             padding: 10px 15px;
@@ -303,8 +309,8 @@ body {
               flex-wrap: wrap;
               width: 70%;
               span {
-                height: 80px;
-                width: 80px;
+                height: 50px;
+                width: 50px;
                 display: flex;
                 align-items: center;
                 justify-content: center;
@@ -318,7 +324,7 @@ body {
             }
             .txt {
               width: 80%;
-              font-size: 16px;
+              font-size: 14px;
               height: auto;
               .title {
                 font-weight: 500;
@@ -328,19 +334,18 @@ body {
               .para {
                 color: gray;
                 font-weight: 400;
-                font-size: 16;
+                font-size: 14px;
               }
             }
           }
           .box-small {
             background-color: var(--gray);
             border-radius: 20px;
-            padding: 10px 15px;
+            padding: 10px 20px;
             display: flex;
             flex-direction: column;
             align-items: flex-start;
             justify-content: space-evenly;
-
             .ico {
               display: flex;
               height: auto;
@@ -350,8 +355,8 @@ body {
               flex-wrap: wrap;
               width: 100%;
               span {
-                height: 60px;
-                width: 60px;
+                height: 55px;
+                width: 55px;
                 display: flex;
                 align-items: center;
                 justify-content: center;
@@ -370,12 +375,12 @@ body {
               .title {
                 font-weight: 500;
                 color: white;
-                font-size: 20px;
+                font-size: 16px;
               }
               .para {
                 color: gray;
                 font-weight: 400;
-                font-size: 16;
+                font-size: 12px;
                 text-align: left;
               }
             }
@@ -385,10 +390,10 @@ body {
               gap: 10px;
               span {
                 width: auto;
-                padding: 10px 12px;
+                padding: 5px 12px;
                 background-color: var(--black);
                 color: white;
-                font-size: 14px;
+                font-size: 12px;
                 border-radius: 100px;
               }
             }
@@ -401,7 +406,6 @@ body {
             flex-direction: row;
             align-items: center;
             justify-content: space-between;
-
             .txt {
               width: 40%;
               color: white;
@@ -412,12 +416,12 @@ body {
               justify-content: space-between;
               gap: 10px;
               .title {
-                font-size: 25px;
+                font-size: 18px;
               }
               .para {
                 flex: 1;
                 line-height: 2;
-                font-size: 16px;
+                font-size: 14px;
                 color: gray;
               }
             }
@@ -434,10 +438,27 @@ body {
                 padding: 8px 20px;
                 background: var(--black);
                 color: white;
+                font-size: 12px;
                 border-radius: 100px;
               }
             }
           }
+        }
+      }
+      .dark-theme {
+        background-color: var(--black);
+        color: white;
+
+        #ico {
+          background: white;
+        }
+        #stack {
+          color: white;
+        }
+        #grid-btn {
+          color: white;
+          background: none;
+          border-color: white;
         }
       }
       .CaCV {
