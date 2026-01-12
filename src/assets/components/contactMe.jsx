@@ -41,9 +41,6 @@ export const CaCv = () => {
         <a href={CV} className="CvBtn" download>
           <button>
             <p>CV</p>
-
-            <p id="DspTg">Download my CV</p>
-            {/* <!--Display on hover--> */}
           </button>
         </a>
       </div>

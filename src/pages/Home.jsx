@@ -15,8 +15,8 @@ export const Home = () => {
 
   const navConfig = [
     { id: "contact", icon: FaPhone, link: "#contact" },
-    { id: "stack", icon: FaJs, link: "#stack" },
-    { id: "projects", icon: FaDiagramProject, link: "#projects" },
+    { id: "stack", icon: FaJs, link: "#main" },
+    { id: "projects", icon: FaDiagramProject, link: "#main" },
     { id: "github", icon: LuGithub, link: "https://github.com/el3mzwurld" },
     { id: "cv", icon: PiReadCvLogoBold, link: "#cv" },
   ];
@@ -38,6 +38,7 @@ export const Home = () => {
       }
     }
 
+    // SPA view switching
     if (item.id === "projects" || item.id === "stack") {
       setActivePage(item.id);
     }
@@ -106,6 +107,24 @@ export const Home = () => {
               scalable code.
             </Text>
           </Box>
+          <Box
+            className="top-name"
+            display={{ base: "flex", md: "none" }}
+            width={{ base: 0, md: "90%" }}
+            position={"absolute"}
+            height={{ base: 0, md: "120px" }}
+            justifyContent={"space-between"}
+            alignItems={"flex-start"}
+          >
+            <Text display={"flex"} gap={1.5} id="name">
+              <Link variant={"plain"} href="https://github.com/el3mzwurld">
+                Elemi.co
+              </Link>
+            </Text>
+            <Text width={"30%"} height={"100%"} textAlign={"right"} id="about">
+              Hi, Welcome to my portfolio...
+            </Text>
+          </Box>
           <Box className="btn"></Box>
         </Box>
 
@@ -144,7 +163,7 @@ export const Home = () => {
 
       {/* All SPA components will be rendered here and should be flexible */}
 
-      <main>
+      <main id="main">
         <AnimatePresence mode="wait">
           {activePage === "projects" && (
             <motion.div
