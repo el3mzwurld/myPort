@@ -1,0 +1,42 @@
+[
+  {
+    "id": 1,
+    "title": "Krypto",
+    "stack": ["React", "JavaScript", "CSS"],
+    "link": "https://krypto-ten-delta.vercel.app/",
+    "imageUrl": "content/img/krypto.png",
+    "inDev": true
+  },
+  {
+    "id": 2,
+    "title": "Marc & Associates Firm Landing page concept",
+    "stack": ["React", "JavaScript", "Chakra UI"],
+    "link": "https://mark-and-asc.vercel.app/",
+    "imageUrl": "content/img/marc.png",
+    "inDev": true
+  },
+  {
+    "id": 3,
+    "title": "GWG.CO Fashion Store Landing page",
+    "stack": ["React", "JavaScript", "CSS"],
+    "link": "https://elemz-gwg.vercel.app/",
+    "imageUrl": "content/img/gwg.png",
+    "inDev": false
+  },
+  {
+    "id": 4,
+    "title": "DigiBank",
+    "stack": ["React", "JavaScript", "CSS", "Chakra UI"],
+    "link": "https://digi-bank.vercel.app/",
+    "imageUrl": "content/img/digi.png",
+    "inDev": false
+  },
+  {
+    "id": 5,
+    "title": "Markdown Editor",
+    "stack": ["React", "TypeScript", "CSS"],
+    "link": "https://ts-markdown.vercel.app/",
+    "imageUrl": "content/img/mkd.png",
+    "inDev": false
+  }
+]
