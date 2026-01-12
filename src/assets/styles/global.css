@@ -1695,5 +1695,356 @@ body {
     }
   }
 }
-@media (min-width: 375px) and (max-width: 424px) {
+@media (min-width: 320px) and (max-width: 424px) {
+  .home {
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    gap: 0px;
+    align-items: center;
+
+    header {
+      width: 100%;
+      height: 100vh;
+      background-color: rgb(24, 24, 24);
+      position: relative;
+      z-index: 0;
+      font-family: var(--inter);
+      nav {
+        position: absolute;
+        bottom: 10px;
+        width: 100%;
+        height: 60px;
+
+        ul {
+          display: flex;
+          width: 100%;
+          align-items: center;
+          justify-content: center;
+          padding: 10px 20px;
+          gap: 15px;
+          li {
+            height: 40px;
+            width: 40px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background: var(--gray);
+
+            svg {
+              width: 50%;
+              height: 50%;
+            }
+          }
+          .active {
+            background: #ffffff;
+            border-radius: 30px;
+            height: 42px;
+            width: 42px;
+          }
+        }
+      }
+
+      .header-Bkg {
+        display: none;
+      }
+      .header-txt {
+        position: relative;
+        width: 100%;
+        height: 100%;
+        z-index: -1;
+        color: var(--white);
+
+        .main {
+          top: 50%;
+          left: 20%;
+          transform: translate(-20%, -50%);
+          position: absolute;
+          width: 100%;
+          font-size: 50px;
+          padding-left: 20px;
+        }
+
+        .top-name {
+          position: absolute;
+          top: 10px;
+          left: 20px;
+          width: 90%;
+          font-size: 14px;
+          height: 80px;
+          font-family: "Space Mono", sans-serif;
+          #name {
+          }
+
+          #about {
+            width: 70%;
+          }
+        }
+      }
+    }
+  }
+
+  main {
+    display: flex;
+    flex-direction: column;
+    .main-projects {
+      width: 100%;
+      height: auto;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 10px;
+      padding: 30px 15px;
+      .project-grid {
+        width: 100%;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        .title {
+          width: 90%;
+          display: flex;
+          align-items: flex-start;
+          justify-content: space-between;
+          height: 120px;
+
+          .title-header {
+            font-size: 20px;
+          }
+          p {
+            font-size: 10px;
+            width: 60%;
+            text-align: right;
+            color: gray;
+          }
+        }
+        .grid {
+          width: 100%;
+          grid-template-rows: repeat(4, 350px);
+          grid-template-columns: repeat(1, 350px);
+          align-items: center;
+          padding: 20px 0px;
+          gap: 20px;
+          .grid-item {
+            width: 100%;
+            height: 100%;
+
+            .preview {
+              width: 100%;
+              height: 70%;
+              position: relative;
+              img {
+                border-radius: 20px;
+              }
+
+              .inDev {
+                position: absolute;
+                top: 20px;
+                left: 25px;
+                font-family: var(--DMsans);
+                font-size: 12px;
+                width: auto;
+                padding: 10px 30px;
+                cursor: pointer;
+                opacity: 0.6;
+                transition: 0.6s ease;
+                font-family: "Space Mono", sans serif;
+              }
+
+              .true {
+                background: black;
+                color: white;
+              }
+            }
+
+            .link {
+              width: 100%;
+              height: auto;
+              padding: 10px 10px;
+
+              a {
+                width: 35px;
+                height: 35px;
+
+                span {
+                  width: 100%;
+                  height: 100%;
+                  display: flex;
+                  align-items: center;
+                  justify-content: center;
+                  transform: rotate(-20deg);
+                  svg {
+                    width: 50%;
+                    height: 50%;
+                  }
+                }
+              }
+              #project-name {
+                font-size: 14px;
+              }
+              #stack {
+                font-size: 12px;
+              }
+            }
+          }
+        }
+      }
+      #grid-btn {
+        width: 135px;
+        padding: 20px 10px;
+        background-color: var(--gray);
+        color: var(--white);
+        font-size: 12px;
+      }
+    }
+    .stack {
+      height: auto;
+      width: 100%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding: 20px 15px;
+      font-family: var(--DMsans);
+      .mob-stack {
+        width: 100%;
+        height: 400px;
+
+        .stack-item {
+          width: 100%;
+          height: 100%;
+          background: var(--gray);
+          border-radius: 20px;
+          color: white;
+          display: flex;
+          padding: 15px 20px;
+          flex-direction: column;
+          align-items: flex-start;
+          justify-content: space-evenly;
+          .ico {
+            display: flex;
+            height: auto;
+            width: 70%;
+            flex-wrap: wrap;
+            gap: 20px;
+            span {
+              width: 50px;
+              height: 50px;
+              display: flex;
+              border-radius: 50px;
+              align-items: center;
+              justify-content: center;
+              background-color: #2e2c2c;
+              svg {
+                width: 50%;
+                height: 50%;
+              }
+            }
+          }
+
+          .txt {
+            height: auto;
+            width: 100%;
+
+            .title {
+              font-size: 16px;
+            }
+            .para {
+              font-size: 12px;
+              color: gray;
+            }
+          }
+        }
+      }
+    }
+    .CaCV {
+      width: 100vw;
+      height: 100vh;
+      position: relative;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      .Bbtn {
+        display: flex;
+        flex-direction: column;
+        font-family: "Space Mono", sans-serif;
+        padding: 10px 5px;
+        align-items: center;
+        gap: 20px;
+        .txt {
+          font-size: 35px;
+        }
+        .btns {
+          width: 160px;
+          height: auto;
+          display: flex;
+          flex-wrap: wrap;
+          align-items: center;
+          justify-content: center;
+          gap: 20px;
+          a {
+            width: 60px;
+            height: 60px;
+            border: 2px solid var(--black);
+            border-radius: 100%;
+            transition: 0.4s ease;
+            button {
+              width: 100%;
+              height: 100%;
+              display: flex;
+              align-items: center;
+              justify-content: center;
+              span {
+                width: 100%;
+                height: 100%;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+              }
+              svg {
+                width: 40%;
+                height: 40%;
+              }
+            }
+          }
+
+          .Btlg {
+            background-color: #262626;
+            color: steelblue;
+            transition: 0.4s ease;
+            border: none;
+          }
+          .WhAp {
+            background-color: #262626;
+            color: greenyellow;
+            transition: 0.4s ease;
+            border: none;
+          }
+          .Bml {
+            background-color: #262626;
+            color: white;
+            transition: 0.4s ease;
+            border: none;
+          }
+        }
+      }
+      #cv {
+        position: absolute;
+        bottom: 10px;
+        right: 20px;
+        height: 50px;
+        width: 50px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background: var(--gray);
+        color: white;
+        transition: 0.4s ease;
+
+        &:hover {
+          transform: rotate(-30deg);
+        }
+      }
+    }
+  }
 }
